@@ -1,0 +1,36 @@
+.section-2{
+    margin-top:50px;
+    text-align: center;
+    background-image: url("../img/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 30px;
+
+    .inner{
+        @include inner_box;
+    }
+
+    h3{
+        color:#fff;
+    }
+
+    @media only screen and (max-width:900px){
+        margin-top:0px;
+        text-align: center;
+        background-image: url("../img/bg.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        padding:0px;
+        object-fit: cover;
+    
+        h3{
+            color:#fff;
+            font-size:13px;
+        }
+
+        h5{
+            font-size: 8px;
+        }
+    }
+}

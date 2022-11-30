@@ -1,0 +1,21 @@
+footer{
+    background-color: black;
+    padding:30px;
+    text-align: center;
+
+    .fa{
+        color: darkgrey;
+        font-size: 25px;
+        padding:10px;
+    }
+
+    @media only screen and (max-width:900px){
+        padding:20px;
+
+        .fa{
+            color: darkgrey;
+            font-size:15px;
+            padding:6px;
+        }
+    }
+}

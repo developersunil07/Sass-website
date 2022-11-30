@@ -1,0 +1,91 @@
+// variable
+$common-color:darkgrey;
+
+// mixin
+@mixin inner_box {
+    max-width:1200px;
+    margin:0 auto;
+    padding:20px 20px;
+
+
+    @media only screen and (max-width:900px){
+        max-width:100%;
+        margin:0 auto;
+        padding:10px 10px;
+    
+    }
+}
+
+@mixin flex_box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+h5{
+    color:$common-color;
+    font-size:13px;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    font-weight: 300;
+
+    @media only screen and (max-width:900px){
+        h5
+            {color:$common-color;}
+            font-size:11px;
+            letter-spacing:1px;
+            word-spacing:1px;
+
+        
+
+    }
+
+}
+
+hr{
+    width:300px;
+    border: 0;
+    background-color: $common-color;
+    height: 1px;
+    display: inline-block;
+
+    @media only screen and (max-width:900px){
+    
+            width:170px;
+            border: 0;
+            background-color: $common-color;
+            height: 1px;
+            display: inline-block;
+            
+        
+    }
+    
+}
+
+
+// import
+
+@import"header";
+@import"section-1";
+@import"section-2";
+@import"section-3";
+@import"footer";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+
+    @media only screen and (max-width:900px){
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    
+    }
+}
+
+body{
+    background-color:#f2f2f2;
+}
